@@ -12,6 +12,7 @@ Core Design:
 
 
 The core features of the editor/interpreter are:
+
 1. Browser-based for maximum portability
 2. All keywords and special strings should be highlighted (lots of feedback)
 3. Code execution is always step by step (debug mode)
