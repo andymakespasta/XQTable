@@ -1,0 +1,69 @@
+.XQTTable{       /*outside border*/
+    border: 1px solid black; 
+    border-collapse: collapse; /*removes spacing between cells*/
+    border-spacing: 0.5rem; /* if above is not applied, chooses spacing */
+
+}
+
+.XQTTable td{    /*individual cells*/ 
+    border: 1px solid black;   
+    min-width: 5em;
+    height: 1.7em;
+
+    white-space: nowrap;
+
+    background-color: #ffffff;/*non-empty, non-command defaults*/
+}
+.XQTTable td:focus{    
+    outline: 2px solid black;
+}
+
+/*static cell styles*/
+.XQTTable td.empty{    
+    background-color: #f4f4f4;
+}
+.XQTTable td.command{
+    background-color: #c0e0f4;
+}
+.XQTTable td.highlight{
+    background-color: #ffff40;
+}
+.XQTTable td.button{
+    background-color: #ffffff;
+    text-align: center;
+}
+.XQTTable td.button button{
+    height: 3em;
+    width: 100%;
+    display: block;
+}
+
+/*execution cell styles*/
+.XQTTable td.executionPointer{
+    background-color: #ff7373;
+}
+.XQTTable td.referencedCell{
+    background-color: #2ec921;
+}
+.XQTTable td.changedCell{
+    background-color: #bb00ff;
+}
+
+
+.XQTTableWrapper{
+    max-height: 50em;
+    max-width: 100em;
+    overflow: auto;
+}
+
+#DisableOverlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0.5;
+    background: #555555;
+    z-index: 5;
+    transform: translateZ(0);
+}
